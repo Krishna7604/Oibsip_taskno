@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/val1"
+        android:id="@+id/val1"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+
+        android:textColorHint="@color/col"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/val2"
+        android:inputType="number"
+        android:id="@+id/val2"
+
+        android:textColorHint="@color/col"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="1"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+        <Button
+            android:text="@string/add"
+            android:textSize="35sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:onClick="ops"
+            android:textColor="@color/white"
+            android:backgroundTint="#03A9F4"
+            />
+        <Button
+            android:text="@string/sub"
+            android:textSize="35sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sub"
+            android:onClick="ops"
+            android:textColor="@color/white"
+            android:backgroundTint="#FFC107"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:text="@string/mul"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mul"
+            android:onClick="ops"
+            android:textColor="@color/white"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:text="@string/div"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/div"
+            android:onClick="ops"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/col"
+            android:layout_marginLeft="10dp"/>
+
+
+    </GridLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="@string/ac"
+        android:id="@+id/ac"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="@color/red"
+        android:id="@+id/result"
+        />
+
+
+
+</LinearLayout>
